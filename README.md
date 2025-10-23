@@ -62,7 +62,7 @@ OPENAI_API_KEY=...
 5. Chạy backend:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Backend sẽ chạy tại: `http://localhost:8000`
@@ -115,3 +115,4 @@ Frontend sẽ hiển thị địa chỉ truy cập trên terminal, thường là
 - Kiểm tra `.env` để đảm bảo các URL và key API chính xác.  
 
 - Nếu muốn truy cập từ thiết bị khác trong mạng LAN, dùng IP của máy thay cho `localhost` trong `VITE_API_URL`.
+
