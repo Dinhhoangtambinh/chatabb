@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Share Tech";
+  src: url("/fonts/VLRESO.OTF") format("opentype");
+  /* src: url("/fonts/Inconsolata.ttf") format("opentype"); */
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Share Tech", sans-serif !important;
+}
+
+@layer base {
+  :root {
+    --mainBg: #EAECEB;
+    --mainBg2: #e4e7e5;
+    --light: #F6FAFC;
+    --subBg: #D3D7E3;
+    --light1: #B8C3D7;
+    --light2: #9AA5BB;
+    --light3: #6D7790;
+    --dark1: #505C74;
+    --dark2: #3C465F;
+    --dark3: #2E394B;
+    --dark4: #191D29;
+    --expense: #B5525C;
+    --income: #5A8F7B;
+  }
+}
+
+.ant-carousel .slick-dots {
+  bottom: -5px !important;
+}
