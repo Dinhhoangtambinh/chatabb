@@ -2,9 +2,9 @@
 
 ChatAbb là một ứng dụng chat web gồm **backend** và **frontend**:
 
-- **be** - FastAPI backend để tương tác với cơ sở dữ liệu và OpenAI API  
-- **fe** - Giao diện web cho ứng dụng chat
-- **database** - Sử dụng Supabase để lưu trữ data, nếu có lỗi database không tồn tại, hãy sử dụng cloudflare (1.1.1.1)
+- **Backend (BE)**: FastAPI backend để tương tác với cơ sở dữ liệu và OpenAI API, dùng **Alembic** để quản lý migration.  
+- **Frontend (FE)**: Giao diện web cho ứng dụng chat, sử dụng **Tailwind CSS**, **Vite**, và **Ant Design**.  
+- **Database**: Sử dụng **Supabase** để lưu trữ dữ liệu. Nếu có lỗi khi kết nối database, sử dụng **Cloudflare DNS (1.1.1.1)**.
 
 ## Tính năng
 
@@ -116,5 +116,6 @@ Frontend sẽ hiển thị địa chỉ truy cập trên terminal, thường là
 - Kiểm tra `.env` để đảm bảo các URL và key API chính xác.  
 
 - Nếu muốn truy cập từ thiết bị khác trong mạng LAN, dùng IP của máy thay cho `localhost` trong `VITE_API_URL`.
+
 
 
